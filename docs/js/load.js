@@ -11,7 +11,7 @@ function loadJson() {
 
 //HTMLを初期化
 $("#result").html("");
-$("#result").append("<img src='title.black.toka.png' style='width: 70vw'>");
+$("#result").append("<img src='img/title.black.toka.png' style='width: 70vw'>");
 //HTMLを生成
 $.getJSON("result.json", function(data){
 $(data).each(function(){
