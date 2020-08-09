@@ -13,7 +13,7 @@ function loadJson() {
 $("#result").html("");
 $("#result").append("<img src='title.black.toka.png' style='width: 70vw'>");
 //HTMLを生成
-$.getJSON("../result.json", function(data){
+$.getJSON("result.json", function(data){
 $(data).each(function(){
 $("#result").append('<div class="monme">'+
 '<div class="title">'+this.title+'</div>'+
@@ -34,7 +34,7 @@ $("#result").append('</div>');
 //HTMLを初期化
 $("#staff").html("");
 //HTMLを生成
-$.getJSON("../staff.json", function(data){
+$.getJSON("staff.json", function(data){
 $("#staff").append('<div class="gmtitle">GM</div>');
 $("#staff").append('<div class="staff">'+data.gm.join("<br>")+'</div>');
 $(data.special).each(function(){
